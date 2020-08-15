@@ -100,7 +100,7 @@
         sleep 5
         fi   
     elif [[ $n =~ ^(E|exit|Exit|e) ]] ; then
-        echo -e " ${green}[~]${red} Tool'dan Çıkılıyor Bizi Tercih Ettiğiniz İçin Teşekkürer \n ${green}[~]${red} İnstagram: xbatuhanclouds \n ${green}[~]${red} Discord: https://discord.gg/tYgpQcu \n ${green}[~]${red}Github: https://github.com/lewistodev"
+        echo -e " ${green}[~]${red} Tool'dan Çıkılıyor Bizi Tercih Ettiğiniz İçin Teşekkürer \n ${green}[~]${red} İnstagram: xbatuhanclouds \n ${green}[~]${red} Discord: https://discord.gg/tYgpQcu \n ${green}[~]${red} Github: https://github.com/lewistodev"
         sleep 1
         exit
     elif [[ $n = '3' ]] ; then
