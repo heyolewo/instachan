@@ -69,7 +69,7 @@
     echo -e " ${green}[3] ${red}İnsta Shell          ${green}[4] ${red} İnstagm Phish" 
     echo -e " ${green}[5] ${red}Nexphisher           ${green}[6] ${red} Z-Phisher    "
     echo ""
-    echo -e "                                          ${green}[E]${blink} Çıkış Yapmak İçin${tp}" 
+    echo -e "                                          ${green}[E]${red}${blink} Çıkış Yapmak İçin${tp}      ${green}[D]${red} Lolcat${yellow} İndirmek İçin!${tp}" 
 
     echo -n " İstediğiniz Tool'u giriniz! :" | lolcat 
     read n
@@ -95,7 +95,7 @@
         else
         echo -e "${cyan}[~]${red} Tool İndiriliyor!"
         git clone https://github.com/Pure-L0G1C/Instagram.git
-        echo -e "${cyan}[~] ${red}${blink} Tool Başarıyla İndirildi"
+        echo -e "${cyan}[~] ${red}${blink} Tool Başarıyla İndirildi!"
         spinlong
         sleep 5
         fi   
@@ -149,6 +149,16 @@
         spinlong
         sleep 5
         echo -e "${green}[~]${red}${blink} Tool Başarıyla İndirildi!"
+        fi
+    elif [[ $n =~ ^(D|dowloads|d|Dowloads) ]] ; then
+        if [[ -d lolcat ]] ; then
+        echo -e "${green}[~]${red} Tool Zaten İndirilmiş! "
+        sleep 1
+        else
+        echo -e "${lightgreen}${blink}[+]${red} Lolcat İndiriliyor!"
+        git clone https://github.com/busyloop/lolcat.git | spinlong
+        echo -e "${lightgreen}${blink}[+]${red} Lolcat Başarıyla İndirildi! \n ${lightgreen}${blink}[+]${red} Eğer Kullanımı Bilmiyorsanız : https://www.youtube.com/watch?v=Owm-np6Ba5g ${tp}"    
+        sleep 5
         fi
         else
         echo -e "${cyan} Yanlış Veri Girdiniz!"
